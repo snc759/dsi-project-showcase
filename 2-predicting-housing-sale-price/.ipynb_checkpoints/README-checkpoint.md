@@ -75,34 +75,34 @@ The audience of my project will be prospective homeowners that have hired me as 
 
 ### File Directory
 project-2
-|__ code
-|   |__ 00_functions.ipynb
-|   |__ 01_eda_cleaning.ipynb     
-|   |__ 02_linear_model.ipynb
-|   |__ 03_lasso_model.ipynb  
-|   |__ sample_submission.ipynb  
-|__ data
-|   |__ train.csv
-|   |__ train_clean.csv
-|   |__ test.csv
-|   |__ submissions_final.csv
-|   |__ submissions_null.csv
-|__ presentation
-|   |__ Ames Housing Sale Price Predictions.pdf
-|   |__ imgs
-|   |    |__ ExterQual_boxplot.jpg
-|   |    |__ heatmap_corr.jpg
-|   |    |__ heatmap_corr1.jpg
-|   |    |__ hist_GrLivArea.jpg
-|   |    |__ hist_ln_GrLivArea.jpg
-|   |    |__ hist_ln_LotArea.jpg
-|   |    |__ hist_LotArea.jpg
-|   |    |__ nhood_boxplot.jpg
-|   |    |__ ols_p_values_2.jpg
-|   |    |__ ols_p_values.jpg
-|   |    |__ YearBuilt_Price.jpg
-|__ README.md
-
+* README.md
+* code
+    * 00_functions.ipynb
+    * 01_eda_cleaning.ipynb     
+    * 02_linear_model.ipynb
+    * 03_lasso_model.ipynb  
+    * sample_submission.ipynb  
+* data
+    * train.csv
+    * train_clean.csv
+    * test.csv
+    * submissions_final.csv
+    * submissions_null.csv
+* presentation
+    * Ames Housing Sale Price Predictions.pdf
+    * imgs
+        * ExterQual_boxplot.jpg
+        * heatmap_corr.jpg
+        * heatmap_corr1.jpg
+        * hist_GrLivArea.jpg
+        * hist_ln_GrLivArea.jpg
+        * hist_ln_LotArea.jpg
+        * hist_LotArea.jpg
+        * nhood_boxplot.jpg
+        * ols_p_values_2.jpg
+        * ols_p_values.jpg
+        * YearBuilt_Price.jpg
+        
 ---
 
 ### Conclusions 
