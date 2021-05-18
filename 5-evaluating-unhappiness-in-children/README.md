@@ -67,7 +67,7 @@ We decided to use UNHAP42 as our target variable.  This variable was collected f
 
 The first step in the modeling process involved the use of a modeling function.  This function was passed our data, split, and a list of classifiers used to predict or target variable UNHAP42.  The results of this function can be seen in the figure below, the modeling function only produces models with default parameters.  Thus, the top 2 models, logistic regression and random forest,  from this output were chosen for further investigation.
 
-![Figure 1](./charts_graphs/model_function_results.JPG) 
+![Figure 1](./presentation/charts_graphs/model_function_results.JPG) 
 
 The logistic regression model, chosen from the modeling function above, was already above the baseline and had a very balanced bias-variance tradeoff.  With a recall score of .5461 and a difference of only .0018 between training and testing scores there was not much to do in regards to regularization.  Regardless, a pipeline and gridsearchcv were used to test for optimum parameters.  The best parameters chosen by the grid search can be seen in Model_LogisticRegrssion, which increased the gap between training and testing scores and reduced our recall score.
 
@@ -75,7 +75,7 @@ The logistic regression model did not improve recall which is our ability to cor
 
 Another high performing model we wanted to experiment with was the Random Forest Classifier.  After grid-searching through a random forest classification model, the random forest was pruned to a max depth of 20, number of estimators set to 180, min samples in leaf equal to 2, and min samples to split by set equal to 2.   Even with the grid-search parameters optimized, the recall score was still only 0.57, which is not much better than a randomized trial.  Instead, the imblearn python library was used to implement SMOTE which is a method of oversampling the minority class and undersampling the majority class.  After implementing this strategy the pruned random forest model had a recall score of 0.81 which and an accuracy of 0.82.  This was the best model, and the one we used to make conclusions about which factors/indicators were more correlated with a child being unhappy.  Some of the most important features to the random forest model were whether the child felt nervous, whether their relationship with mom, dad, siblings, and other kids were poor, fair, good, or excellent (0-4). 
 
-![Figure 2](./charts_graphs/rf_smote_recall_featImp.jpg) 
+![Figure 2](./presentation/charts_graphs/rf_smote_recall_featImp.jpg) 
 
 ---
 
@@ -85,11 +85,11 @@ After extensive EDA and modeling results, it was determined that the Columbia Im
 
 Sex, Age, and BMI were used to group children into two groups (Male, Female) and then grouped once more by their BMI (Healthy, Underweight, Overweight). Males had no visible trend in unhappiness as age increased. Females, however,  showed a steady increase of percent unhappy as age increased among all three BMI groups, with underweight females who are 16 being the highest percent unhappy at ~70%. This is a very large percentage of females and gives critical insight as to what types of struggles these young girls are dealing with. It was undetermined if underweight BMI was causing unhappiness, or vise-versa, but the main takeaway from this information was that teenage girls are the group most affected by unhappiness, and that researchers should focus more on this group.
 
-![Figure 4](./charts_graphs/bmi2.JPG)
+![Figure 4](./presentation/charts_graphs/bmi2.JPG)
 
 Family income and total medical expenditures were also examined, but very little change among income groups was observed.
 
-![Figure 3](./charts_graphs/income_totexp.JPG) 
+![Figure 3](./presentation/charts_graphs/income_totexp.JPG) 
 
 Based off of these findings, we recommend that researchers who are attempting to study unhappiness among adolescents should group them by sex, age, and bmi, as these groups all showed distinct trends in unhappiness and should be studied separately. It was also determined that children with special health care needs are more likely to be unhappy than their peers. One specific negative attribute for a child with special needs is that the child cannot participate in activities other children can (FOMO - Fear of missing out). This FOMO effect was found to be very negative on children and their happiness. 
 
