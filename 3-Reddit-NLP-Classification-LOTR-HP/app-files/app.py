@@ -17,7 +17,7 @@ if page == 'About':
 if page == 'Make a prediction':
     st.write('Enhance either the Harry Potter, or Lord of the Rings story.  What would you like the story to include? ')
     
-    with open('reddit_pipe.pkl', mode='rb') as pickle_in: 
+    with open('./reddit_pipe.pkl', mode='rb') as pickle_in: 
         pipe = pickle.load(pickle_in)
         
         user_text = st.text_input('Please input your story text: ')
