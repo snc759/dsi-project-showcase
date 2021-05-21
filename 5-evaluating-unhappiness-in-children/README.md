@@ -1,4 +1,4 @@
-## Evaluating Mental Health Status of Children 
+## Evaluating Happiness in Children 
 ---
 ### Table of Contents
 
@@ -9,6 +9,11 @@
 - Conclusion and Recommendations
 - Areas for Further Study/Research
 - File Directory
+
+---
+#### Collaborative Project
+
+#### Contributors: Samantha Chu, Patrick Cudo, Mark Dowicz
 
 ---
 
