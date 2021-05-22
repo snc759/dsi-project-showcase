@@ -15,9 +15,13 @@ if page == 'About':
     if celebrate:
         st.balloons()
     
-    st.write(os.getcwd())
+    cwd = os.getcwd()
+    st.write(print(cwd))
         
 if page == 'Make a prediction':
+    
+    cwd = os.getcwd()
+    
     st.write('Enhance either the Harry Potter, or Lord of the Rings story.  What would you like the story to include? ')
     
     with open('./reddit_pipe.pkl', mode='rb') as pickle_in: 
