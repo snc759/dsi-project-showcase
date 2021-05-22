@@ -90,7 +90,7 @@ def get_recs(user_text, features):
     # ### Transforms text for model input
 
     # Loads the data
-    X_train = pd.read_csv(cwd + '../../Data/X_train_to_tokenize.csv', index_col=0)
+    X_train = pd.read_csv(cwd + '../../X_train_to_tokenize.csv', index_col=0)
     X_train = X_train.squeeze()
 
     # Creates a function that counts unique words
