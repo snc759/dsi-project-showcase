@@ -53,7 +53,9 @@ def get_recs(user_text, features):
     # ### Loads the saved model
 
     # Loads the keras model
-    model = tf.keras.models.load_model('saved_model/my_model')
+    cwd = os.getcwd() + 'capstone-yelp-multiclass-classification-recommender/Code/modeling/'
+    
+    model = tf.keras.models.load_model(cwd + 'saved_model/my_model')
 
     ### Generates a prediction
 
@@ -88,7 +90,7 @@ def get_recs(user_text, features):
     # ### Transforms text for model input
 
     # Loads the data
-    X_train = pd.read_csv('../../Data/X_train_to_tokenize.csv', index_col=0)
+    X_train = pd.read_csv(cwd + '../../Data/X_train_to_tokenize.csv', index_col=0)
     X_train = X_train.squeeze()
 
     # Creates a function that counts unique words
