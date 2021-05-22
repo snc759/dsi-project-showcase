@@ -1,7 +1,7 @@
 tensorflow==2.3.0
 scipy
 requests==2.24.0
-numpy==1.20.1
+numpy
 streamlit==0.80.0
 pandas==1.1.3
 nltk==3.5
