@@ -5,7 +5,7 @@ import os
 from yelp_processing import get_recs
 #-------------------------------------------------------------------------------------------
 
-st.title('Restaurant Recommendations')
+st.title('Restaurant Recommendations in Ohio')
 st.markdown('**Tuned to Your Desired Experience**')
 
 page = st.selectbox("Navigate", ('Get Restaurant Recommendations',))
