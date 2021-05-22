@@ -15,10 +15,6 @@ if page == 'About':
     celebrate = st.button("Click here to celebrate with me, my accomplishment!")
     if celebrate:
         st.balloons()
-    
-    cwd = os.getcwd()
-    st.write(os.getcwd())
-    st.write(type(cwd))
         
 if page == 'Make a prediction':
     
