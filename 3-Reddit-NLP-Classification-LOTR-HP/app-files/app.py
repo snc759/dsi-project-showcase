@@ -16,6 +16,7 @@ if page == 'About':
         st.balloons()
     
     cwd = os.getcwd()
+    st.write(os.getcwd())
     st.write(type(cwd))
         
 if page == 'Make a prediction':
