@@ -169,9 +169,8 @@ def get_recs(user_text, features):
         feature_array += response_dict[feature_input]
     feature_array = feature_array + Ambience
 
-
-
-
+    
+    
 
     # ## Part 2: Recommendation System
 
@@ -185,7 +184,7 @@ def get_recs(user_text, features):
 #     bid_name_df = pd.read_csv('../../Data/busid_to_name.csv')
 
     # Loads the recommendation table
-    rec_df = pd.read_csv('../../recommender_table.csv')
+    rec_df = pd.read_csv(cwd + '../../recommender_table.csv')
 
     # pulls out the index col
     rec_df[['business_id', 'name']] = rec_df['identifier'].str.split("|",expand=True).drop(columns=2)
