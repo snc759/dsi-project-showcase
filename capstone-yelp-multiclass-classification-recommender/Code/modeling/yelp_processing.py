@@ -53,7 +53,7 @@ def get_recs(user_text, features):
     # ### Loads the saved model
 
     # Loads the keras model
-    cwd = os.getcwd() + 'capstone-yelp-multiclass-classification-recommender/Code/modeling/'
+    cwd = os.getcwd() + '/capstone-yelp-multiclass-classification-recommender/Code/modeling/'
     
     model = tf.keras.models.load_model(cwd + 'saved_model/my_model')
 
