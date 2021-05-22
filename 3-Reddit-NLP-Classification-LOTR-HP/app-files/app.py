@@ -1,5 +1,6 @@
 import streamlit as st
 import pickle
+import os
 
 st.title('Are you adding to Lord of the Rings or Harry Potter?')
 st.write('')
@@ -13,6 +14,8 @@ if page == 'About':
     celebrate = st.button("Click here to celebrate with me, my accomplishment!")
     if celebrate:
         st.balloons()
+    
+    st.write(os.getcwd())
         
 if page == 'Make a prediction':
     st.write('Enhance either the Harry Potter, or Lord of the Rings story.  What would you like the story to include? ')
