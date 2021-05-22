@@ -1,7 +1,6 @@
 import streamlit as st
 import pickle
 import os
-import sklearn
 
 
 st.title('Are you adding to Lord of the Rings or Harry Potter?')
