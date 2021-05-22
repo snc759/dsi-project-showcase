@@ -8,7 +8,7 @@ from yelp_processing import get_recs
 st.title('Restaurant Recommendations')
 st.markdown('**Tuned to Your Desired Experience**')
 
-page = st.selectbox("Navigate", ('Get Restaurant Recommendations'))
+page = st.selectbox("Navigate", ('Get Restaurant Recommendations',))
 
 if page == 'Get Restaurant Recommendations': 
 
