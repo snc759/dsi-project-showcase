@@ -182,10 +182,10 @@ def get_recs(user_text, features):
     # ### Loads in the Recommendation Table and Business Id to Names Table
 
     # Loads the dataframe that matches business ids to business names in case it's needed
-    bid_name_df = pd.read_csv('../../Data/busid_to_name.csv')
+#     bid_name_df = pd.read_csv('../../Data/busid_to_name.csv')
 
     # Loads the recommendation table
-    rec_df = pd.read_csv('../../Data/recommender_table.csv')
+    rec_df = pd.read_csv('../../recommender_table.csv')
 
     # pulls out the index col
     rec_df[['business_id', 'name']] = rec_df['identifier'].str.split("|",expand=True).drop(columns=2)
