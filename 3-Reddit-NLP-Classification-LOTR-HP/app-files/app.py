@@ -12,9 +12,9 @@ page = st.sidebar.selectbox("Select a page",
                            )
 if page == 'About':
     st.write('Here is my Reddit Classification NLP Project about Famous Fantasy Stories!')
-    celebrate = st.button("Click here to celebrate with me, my accomplishment!")
-    if celebrate:
-        st.balloons()
+#     celebrate = st.button("Click here to celebrate with me, my accomplishment!")
+#     if celebrate:
+#         st.balloons()
         
 if page == 'Make a prediction':
     
