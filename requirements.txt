@@ -1,6 +1,6 @@
 html5lib==1.0.1
 jupyter==1.0.0
-matplotlib==2.1.2
+matplotlib==3.3.4
 numpy==1.14.0
 pandas==0.22.0
 requests==2.18.4
