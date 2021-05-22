@@ -36,7 +36,7 @@ def get_recs(user_text, features):
     from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
     import nltk
     # nltk.download() # --> Download all, and then restart jupyter lab
-    # nltk.download('stopwords')
+    nltk.download('stopwords')
     from nltk.tokenize import sent_tokenize, word_tokenize, RegexpTokenizer
     from nltk.stem import WordNetLemmatizer
     from nltk.stem.porter import PorterStemmer
