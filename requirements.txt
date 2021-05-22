@@ -1,5 +1,5 @@
 tensorflow==2.3.0
-scipy==1.5.2
+scipy
 requests==2.24.0
 numpy==1.20.1
 streamlit==0.80.0
